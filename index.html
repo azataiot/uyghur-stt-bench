@@ -110,9 +110,10 @@ const SAMPLES_META = {
 
 const SAMPLE_ORDER = ["antal-hadi", "dastan-01", "dutar-01", "speedy-01"];
 
-const PROVIDERS = ["gheyret-asr", "konch", "openl", "sonix", "speechmatics", "speechyou"];
+const PROVIDERS = ["elevenlabs", "gheyret-asr", "konch", "openl", "sonix", "speechmatics", "speechyou"];
 
 const PROVIDER_LABELS = {
+  "elevenlabs": "ElevenLabs",
   "gheyret-asr": "Gheyret ASR",
   "konch": "Konch",
   "openl": "OpenL",
@@ -122,6 +123,7 @@ const PROVIDER_LABELS = {
 };
 
 const PROVIDER_SCRIPT = {
+  "elevenlabs": "mixed",
   "gheyret-asr": "latin",
   "konch": "arabic",
   "openl": "arabic",
@@ -136,6 +138,527 @@ RESULTS["antal-hadi"] = {};
 RESULTS["dastan-01"] = {};
 RESULTS["dutar-01"] = {};
 RESULTS["speedy-01"] = {};
+
+// ElevenLabs — mixed script output (Latin/Cyrillic/Turkish depending on sample)
+RESULTS["antal-hadi"]["elevenlabs"] = { type: "srt", content: `1
+00:00:00,380 --> 00:00:06,640
+Azi shox e ishq
+
+2
+00:00:06,640 --> 00:00:09,360
+dar
+
+3
+00:00:09,360 --> 00:00:16,120
+shoram, azi shox
+
+4
+00:00:17,400 --> 00:00:20,939
+e ishq dar
+
+5
+00:00:22,220 --> 00:00:27,220
+shoram.
+
+6
+00:00:27,220 --> 00:00:29,440
+Azimasti
+
+7
+00:00:30,480 --> 00:00:35,960
+mezanam.
+
+8
+00:00:35,960 --> 00:00:38,400
+Oooo!
+
+9
+00:00:40,840 --> 00:00:45,440
+Vay azimasti
+
+10
+00:00:46,260 --> 00:00:51,520
+mezanam.
+
+11
+00:00:51,520 --> 00:00:53,740
+Oooo.
+
+12
+00:00:56,060 --> 00:00:58,660
+Azi jomi
+
+13
+00:00:59,320 --> 00:01:04,420
+bod-e mahmura
+
+14
+00:01:04,420 --> 00:01:09,690
+shuram. Hay, hay,
+
+15
+00:01:09,690 --> 00:01:13,980
+hay, ax yo
+
+16
+00:01:16,840 --> 00:01:18,840
+zimasti
+
+17
+00:01:19,800 --> 00:01:24,860
+mezanam.
+
+18
+00:01:24,860 --> 00:01:30,980
+Oooo, vay
+
+19
+00:01:30,980 --> 00:01:33,820
+azimasti
+
+20
+00:01:34,740 --> 00:01:39,900
+mezanam.
+
+21
+00:01:39,900 --> 00:01:45,500
+Oooo. Xush
+
+22
+00:01:45,500 --> 00:01:51,060
+qudratli Parvardigor biro
+
+23
+00:01:51,060 --> 00:01:57,120
+borim, voy. Xush qudratli
+
+24
+00:01:57,120 --> 00:02:03,1000
+Parvardigor biro borim.
+
+25
+00:02:04,000 --> 00:02:04,810
+Qulum
+
+26
+00:02:05,460 --> 00:02:11,810
+tutuv yulgho salgil andin hodim,
+
+27
+00:02:11,810 --> 00:02:18,540
+voy. Zoti ulug' Rahmoniyam
+
+28
+00:02:18,540 --> 00:02:24,600
+ham Jabborim, voy. Zoti
+
+29
+00:02:24,600 --> 00:02:28,680
+ulug' Rahmoniyam ham
+
+30
+00:02:28,680 --> 00:02:31,880
+Jabborim.
+
+31
+00:02:32,600 --> 00:02:38,579
+Qulum tutuv yulgho salgil andin
+
+32
+00:02:38,580 --> 00:02:44,720
+hodim, voy. Seherlerde
+
+33
+00:02:44,720 --> 00:02:50,780
+yig'lab tushsam qollar kunden,
+
+34
+00:02:50,780 --> 00:02:57,640
+voy. Seherlerde yig'lab tushsam qollar
+
+35
+00:02:57,640 --> 00:03:00,640
+kunden.
+
+36
+00:03:01,380 --> 00:03:07,140
+Kunim oshqini aga bo'lar yaxshi
+
+37
+00:03:07,140 --> 00:03:09,890
+senden.
+
+38
+00:03:10,640 --> 00:03:16,340
+Kunim oshqini aga bo'lar yaxshi
+
+39
+00:03:16,340 --> 00:03:23,320
+senden. Vay, qudratiga mehvi
+
+40
+00:03:23,320 --> 00:03:27,160
+bo'lib ketay uzden,
+
+41
+00:03:27,900 --> 00:03:34,840
+voy, ketay uzden. Qulum
+
+42
+00:03:34,840 --> 00:03:38,910
+tutuv yulgho salgil andin
+
+43
+00:03:39,640 --> 00:03:46,560
+hodim, voy. Ijoatni haqdin
+
+44
+00:03:46,560 --> 00:03:53,100
+tillab, qilmu najot, voy.
+
+45
+00:03:53,100 --> 00:03:58,440
+Ijoatni haqdin tillab, qilmu
+
+46
+00:03:58,440 --> 00:04:02,820
+najot. Ojot-` };
+
+RESULTS["dastan-01"]["elevenlabs"] = { type: "srt", content: `1
+00:00:00,180 --> 00:00:04,840
+Qahramanlarning ish faoliyatlari,
+qiz-yigitlarning muhabbat hikoyalari,
+
+2
+00:00:04,840 --> 00:00:09,900
+islom dini bilan munosabatli hikoyalar va
+pandi-nasihat temasi dagi mazmunlar bayon
+
+3
+00:00:09,900 --> 00:00:11,1000
+qilinadi.
+
+4
+00:00:24,740 --> 00:00:29,400
+Rivoyatlarda aytilishicha, burchon Bakr
+ilida, ya'ni Bakr shahrida Shoh Abbas
+
+5
+00:00:29,400 --> 00:00:31,920
+degan bir podsho adolatli davlatga
+turetdi.
+
+6
+00:00:33,160 --> 00:00:36,920
+Shoh Abbas bo'lsa, kunlardan bir kuni bu
+Bag'dod shahridan Hasan vazir degan bir
+
+7
+00:00:36,920 --> 00:00:39,540
+kishini olib kelib, bu kishini o'ng qo'l
+vaziri qildi.
+
+8
+00:00:40,140 --> 00:00:44,300
+Hasan vazir bilan ikkisi shaharni adolatli
+qilib so'rab, shunday yaxshi turmush
+
+9
+00:00:44,300 --> 00:00:50,1000
+o'tkazdi. Xalq baxtiyor, shahri obod,
+shunday bir shaharda edi. Shoh Abbas
+
+10
+00:00:51,000 --> 00:00:55,820
+bo'lsa, kunlardan bir kuni butun lavha
+ishga tushiradilar. Hasan vazir bilan
+
+11
+00:00:55,820 --> 00:01:02,160
+ikkisi ular ovga chiqdi. Ovga chiqishdan
+ov qiladigan manzilga yetib borgandan
+
+12
+00:01:02,160 --> 00:01:07,160
+keyin Shoh Abbas Hasan vazirga aytdi: "Ey
+Hasan vazir, ikkimiz lashkarlarni ikki ga
+
+13
+00:01:07,160 --> 00:01:07,400
+bo'lib,
+
+14
+00:01:08,360 --> 00:01:13,220
+bu shu taqnim ikkita tarafda ov qilaylik.
+Akşamlari ikkimiz bo'lsa, ovdan qaytgan
+
+15
+00:01:13,220 --> 00:01:17,440
+vaqtda ovlab kelgan oljlarimizni bir yerga
+yig'ib, ikkimiz birla qaytayiz deyub
+
+16
+00:01:17,440 --> 00:01:18,610
+va'da qilishdi. Shundan
+
+17
+00:01:19,360 --> 00:01:24,960
+keyin ular ikki tarafga bo'linib ov qildi.
+Shoh Abbas ov qilib ketib borayotgan
+
+18
+00:01:24,960 --> 00:01:29,740
+ekan, Shoh Abbosning oldiga bir dona kiyik
+uchradi. Bu kiyik bo'lsa, shunday rang
+
+19
+00:01:29,740 --> 00:01:34,880
+yarang, hixtatlik, har bir tukidan
+birinchi marjonlar osilgan, ajoyib
+
+20
+00:01:34,880 --> 00:01:39,960
+rangdar, chiroyli kiyik edi. Shoh Abbas
+butun vazirlarini yig'ib, lashkarlarini
+
+21
+00:01:39,960 --> 00:01:44,060
+yig'ib, "bu kiyikni ordak olib ketaylik,
+otaaylik deb qaradi. Oq yarli bular
+
+22
+00:01:44,060 --> 00:01:47,340
+qariday bo'lsa, kiyik bo'lsa, Shoh
+Abbosning oldiga kelib tan burib olib
+
+23
+00:01:47,340 --> 00:01:51,860
+turdi. Kiyik bo'lsa, ko'zlaridan yosh
+tomchi lab, yoshlari bo'ylab oqib turgan.
+
+24
+00:01:51,860 --> 00:01:56,760
+Qariday bo'lsa, bu kiyik bo'g'oz ekan. Bu
+kiyikning tug'ishi oz qolgan. Shoh Abbas
+
+25
+00:01:56,760 --> 00:02:01,260
+o'ylanib qoldi va darhol mening uyda
+ayolim homilador qolgandi. Bu bo'g'oz
+
+26
+00:02:01,260 --> 00:02:04,980
+kiyikni etmasam, men o'sha uydagi
+homilador qolgan ayolim tavallud qilgan
+
+27
+00:02:04,980 --> 00:02:08,840
+vaqtda shundan ziyan-zakovat yetib
+qolmasin. Men bu kiyikni eng yaxshisi
+
+28
+00:02:08,840 --> 00:02:14,200
+otmaganim yaxshi ekan, deb Shoh Abbas
+bo'lsa, butun vazir lashkarlarini tarqatib
+
+29
+00:02:14,200 --> 00:02:18,800
+qo'yinglar. Kiyikni qo'yib, tinch o'z
+makoniga ketsin, dedi. Shoh Abbas shuning
+
+30
+00:02:18,800 --> 00:02:20,460
+bilan o'z yo'lini davom ettirdi.
+
+31
+00:02:21,100 --> 00:02:23,120
+Bir oz vaqt o'tgandan keyin bu kiyik
+
+32
+00:02:23,800 --> 00:02:25,900
+bir Hasan vazirning ham oldiga uchradi.` };
+
+RESULTS["dutar-01"]["elevenlabs"] = { type: "srt", content: `1
+00:00:00,620 --> 00:00:08,220
+[müzik]
+
+2
+00:00:08,220 --> 00:00:15,210
+Al beni at dağlara, at at diye ağlayıp,
+at at diye
+
+3
+00:00:15,210 --> 00:00:20,640
+ağlayıp beni. Hele bir yallah deyip, yak
+şimdi tappayıydı. Bir yallah deyip, yak
+
+4
+00:00:20,640 --> 00:00:21,020
+şimdi
+
+5
+00:00:21,020 --> 00:00:30,040
+tappayıydı.
+
+6
+00:00:30,040 --> 00:00:32,700
+[müzik]
+
+7
+00:00:35,780 --> 00:00:42,100
+Serta yok mu girersem, ve yorulursam sen
+görürsün. Ve
+
+8
+00:00:42,100 --> 00:00:48,600
+yorulursam sen görürsün. Sevgilim ne
+derlerse, fa
+
+9
+00:00:48,600 --> 00:00:50,760
+sepetli girersem.
+
+10
+00:00:51,400 --> 00:00:57,440
+Sevgilim ne derlerse, fa sepetli girersem.
+
+11
+00:00:58,680 --> 00:00:59,920
+[müzik]
+
+12
+00:01:16,540 --> 00:01:21,480
+Ah seni değme, ah seni değme! Ah seni
+görmeyeydim nur, ah seni görmeydim yüreğim
+
+13
+00:01:21,480 --> 00:01:23,1000
+nur. Ah seni
+
+14
+00:01:31,460 --> 00:01:32,320
+görmek, ah yürek
+
+15
+00:01:32,320 --> 00:01:42,420
+keser,
+
+16
+00:01:42,480 --> 00:01:44,400
+ah bırakın da
+
+17
+00:01:45,680 --> 00:01:46,500
+değdim
+
+18
+00:01:47,220 --> 00:01:53,280
+nur. Ah seni görmek, ah yürek
+
+19
+00:01:53,280 --> 00:01:57,400
+keser, ah bırakın da
+
+20
+00:01:57,400 --> 00:02:00,900
+değdim...
+
+21
+00:02:01,520 --> 00:02:07,660
+Ay balamın hali ne kemi,
+
+22
+00:02:07,660 --> 00:02:09,880
+balamın hali
+
+23
+00:02:11,980 --> 00:02:12,910
+ne kemi.
+
+24
+00:02:14,040 --> 00:02:17,180
+Ah anamın sizi sizi
+
+25
+00:02:17,180 --> 00:02:24,049
+görmeyip,
+
+26
+00:02:26,600 --> 00:02:33,400
+ah
+
+27
+00:02:33,400 --> 00:02:38,750
+biçim bade yüreğim kemi.
+
+28
+00:02:42,160 --> 00:02:43,880
+Ah anamın sizi sizi görmeyip, ah biçim
+bade yüreğim kemi. [müzik]` };
+
+RESULTS["speedy-01"]["elevenlabs"] = { type: "srt", content: `1
+00:00:00,039 --> 00:00:02,339
+Интереслы уйларимизнинг шатлик онасыга
+айлансин.
+
+2
+00:00:02,339 --> 00:00:05,799
+Эсен-сау болсунки! Малик Бектур билан
+Зубайда Турсун. Күнү сизге үзүлмес мелодия
+
+3
+00:00:05,799 --> 00:00:08,539
+аркылы чын акыйда менен унутулгуссыз,
+асил ла-натижа кылып берсин.
+
+4
+00:00:08,539 --> 00:00:11,880
+Силарнын самимий интихамыды тыңлап,
+күйлеримиз яны баракет тапты.
+
+5
+00:00:11,880 --> 00:00:14,800
+Эгер бүгүнки программаны анөөСъыштан
+колдон берип койгон болсоңуз, станциянын
+
+6
+00:00:14,800 --> 00:00:17,379
+жумушу уйгурча радио толугу менен
+программаларыбызды каалаган убакытта,
+
+7
+00:00:17,379 --> 00:00:19,519
+каалаганча тандап алышыңыз болот. Тоора
+адресимиз-
+
+8
+00:00:19,520 --> 00:00:23,700
+www.uitn.com. Бүгүнки программаны Малик
+Бектур даярдады.
+
+9
+00:00:23,700 --> 00:00:25,840
+Программабыздын ваари Мэрдан Мухаммад
+Кадырлы.
+
+10
+00:00:25,840 --> 00:00:28,440
+-Насыл мухаррир Абдуқадир Рашим.
+-Назарчы Бектьяр Турди.
+
+11
+00:00:28,440 --> 00:00:30,360
+-Михраздын алдында Зубайда Турсун.
+-Малик Бектур.
+
+12
+00:00:30,360 --> 00:00:33,239
+-Хайрлы хуш дусат, жакшы аман болобу?
+-Хайрлы хуш!
+
+13
+00:00:33,899 --> 00:00:35,680
+[музыка]` };
 
 // Gheyret ASR — Latin script output
 RESULTS["antal-hadi"]["gheyret-asr"] = { type: "txt", content: `heyjishyung héng héy he hey ichkinang shunga wanga hanga hanga hanga anga anga yol yish kiyin danga shung woli haljining haljinne azille méha silhe méng he heyjinggha aya hejin hasiye ménge méni hey hey jeneherni jeneh hawan bilen heme hawa hem mongda shuyang hem hawil hem hawal hem hay ay naha méng jingni azini he'e jahana hangling wanga he jahana haha waha shumu onggha wu horgha hang hejining bir heje bolidik eler ayatlik terehetlik ede'eller hejining herehetlik bolar herge biler qonush kowa dere her teherde hejeyler bihlining haliwa aldi tük helghan heme bilen alda bar idining zahadi heywilining we he mang'öyge he'e bang oli awa jawudi hewdi hey bolup yene boluq bize ishki qow mang du'ala wa alghin te'el tel hawdiye hewa her her her her her her yerde yerde her yerde herma bolghan jaha he hererde yerwala addilik he qanale herbin her meher chong yang he aw ishken haw ishkenler he awa ishken'gha alghan he alghan chong hang chong hawa chang chang hang chang hang chaning hang isha isha isha hanininisha siti kimen amish ang ish naha aza alghanlar yang shey junga jemet u hayi depire netihe yaher boli neherlik heyge boli neherliy heydige nehere hereydige netihe nehere déwita étewe hemde hewe chüshme bu baha jahan'gha ehel awdiyla awdiyli awdiyli awdiyli awdiyla awdiyla awdi orna hawa aja anga ach hanga hayi jaha ha'eti he heqqi dewlet kéna hajan'gha ajan'gha ajan'gha hawa ajan'gha hajan'gha hajan'gha hajan'gha hajan'gha ajan'gha hajan'gha ajan'gha ajan'gha aya ayan'gha aya` };
