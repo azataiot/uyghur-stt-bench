@@ -10,21 +10,22 @@ This repository evaluates the accuracy and quality of various STT products for U
 
 ## Structure
 
-Each folder in the repository root represents a different STT product/service:
-
 ```
-uyghur-transcript-bench/
+uyghur-stt-bench/
 ├── README.md
-├── samples/                   # Shared test audio files
-├── gheyret-asr/               # Gheyret ASR source (submodule)
-├── qwen3-asr/                 # Qwen3-ASR notes
-├── sonix/                     # Sonix notes
-├── speechmatics/              # Speechmatics source (submodule)
+├── samples/                       # Shared test audio files
+├── providers/
+│   ├── gheyret-asr/               # Gheyret ASR source (submodule)
+│   ├── qwen3-asr/                 # Qwen3-ASR notes
+│   ├── sonix/                     # Sonix notes
+│   ├── speechmatics/              # Speechmatics source (submodule)
+│   └── speechyou/                 # SpeechYou notes
 ├── results/
-│   ├── gheyret-asr/           # Gheyret ASR results
-│   ├── qwen3-asr/             # Qwen3-ASR results
-│   ├── sonix/                 # Sonix results
-│   └── speechmatics/          # Speechmatics results
+│   ├── gheyret-asr/               # Gheyret ASR results
+│   ├── qwen3-asr/                 # Qwen3-ASR results
+│   ├── sonix/                     # Sonix results
+│   ├── speechmatics/              # Speechmatics results
+│   └── speechyou/                 # SpeechYou results
 └── ...
 ```
 
@@ -32,10 +33,11 @@ uyghur-transcript-bench/
 
 | Product | Type | Output Script | Source | Results | Notes |
 |---------|------|---------------|--------|---------|-------|
-| [Gheyret ASR](https://github.com/gheyret/uyghur-asr-transformer) | Open-source transformer | Latin (ULY) | [gheyret-asr/](gheyret-asr/) (submodule) | [results/gheyret-asr/](results/gheyret-asr/) | |
-| [Qwen3-ASR](https://huggingface.co/Qwen/Qwen3-ASR-1.7B) | Open-source LLM | — | [qwen3-asr/](qwen3-asr/) | [results/qwen3-asr/](results/qwen3-asr/) | Planned — no official Uyghur support, requires NVIDIA GPU, [reportedly works](https://blog.csdn.net/weixin_42599908/article/details/158059889) |
-| [Sonix](https://sonix.ai/) | Commercial SaaS | Arabic | [sonix/](sonix/) | [results/sonix/](results/sonix/) | |
-| [Speechmatics](https://www.speechmatics.com/) | Commercial API | Arabic | [speechmatics/](speechmatics/) (submodule) | [results/speechmatics/](results/speechmatics/) | |
+| [Gheyret ASR](https://github.com/gheyret/uyghur-asr-transformer) | Open-source transformer | Latin (ULY) | [providers/gheyret-asr/](providers/gheyret-asr/) (submodule) | [results/gheyret-asr/](results/gheyret-asr/) | |
+| [Qwen3-ASR](https://huggingface.co/Qwen/Qwen3-ASR-1.7B) | Open-source LLM | — | [providers/qwen3-asr/](providers/qwen3-asr/) | [results/qwen3-asr/](results/qwen3-asr/) | Planned — no official Uyghur support, requires NVIDIA GPU, [reportedly works](https://blog.csdn.net/weixin_42599908/article/details/158059889) |
+| [Sonix](https://sonix.ai/) | Commercial SaaS | Arabic | [providers/sonix/](providers/sonix/) | [results/sonix/](results/sonix/) | |
+| [Speechmatics](https://www.speechmatics.com/) | Commercial API | Arabic | [providers/speechmatics/](providers/speechmatics/) (submodule) | [results/speechmatics/](results/speechmatics/) | |
+| [SpeechYou](https://app.speechyou.com/) | Commercial SaaS | Arabic | [providers/speechyou/](providers/speechyou/) | [results/speechyou/](results/speechyou/) | Web interface |
 
 ## Test Samples
 
@@ -47,6 +49,10 @@ All samples are in the [`samples/`](samples/) folder.
 | `dastan-01.mp3` | Medium | 2:26 | Good audio quality, realistic scenario, low background music |
 | `dutar-01.mp3` | Hard | 2:44 | Background music, child crying, noisy environment |
 | `speedy-01.mp3` | Medium | 0:36 | Faster-than-normal speech tempo |
+
+## Note
+
+The products listed above were selected because they claim Uyghur language support on their official websites or documentation. The selection is not based on any bias or preference.
 
 ## Disclaimer
 
