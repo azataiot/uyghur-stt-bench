@@ -40,6 +40,7 @@ uyghur-stt-bench/
 | Product | Type | Output Script | Source | Results | Notes |
 |---------|------|---------------|--------|---------|-------|
 | [BilingualASR](https://github.com/GSQZ/BilingualASR) | Open-source (Uyghur+Chinese) | — | [providers/bilingual-asr/](providers/bilingual-asr/) | [results/bilingual-asr/](results/bilingual-asr/) | Blocked — pretrained model download links are broken |
+| [Clipto](https://www.clipto.com/) | Commercial SaaS | — | — | — | Claims Uyghur support but does not actually provide it |
 | [Gheyret ASR](https://github.com/gheyret/uyghur-asr-transformer) | Open-source transformer | Latin (ULY) | [providers/gheyret-asr/](providers/gheyret-asr/) (submodule) | [results/gheyret-asr/](results/gheyret-asr/) | |
 | [Konch](https://app.konch.ai/) | Commercial SaaS | Arabic | [providers/konch/](providers/konch/) | [results/konch/](results/konch/) | Web interface |
 | [OpenL](https://openl.io/translate/speech/uyghur) | Commercial SaaS | Arabic | [providers/openl/](providers/openl/) | [results/openl/](results/openl/) | Web interface |

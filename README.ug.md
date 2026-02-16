@@ -42,6 +42,7 @@ uyghur-stt-bench/
 | مەھسۇلات | تىپى | يېزىق | ئەسلى كود | نەتىجىلەر | ئىزاھات |
 |-----------|------|-------|------------|------------|---------|
 | [BilingualASR](https://github.com/GSQZ/BilingualASR) | ئوچۇق كودلۇق (ئۇيغۇرچە+خەنزۇچە) | — | [providers/bilingual-asr/](providers/bilingual-asr/) | [results/bilingual-asr/](results/bilingual-asr/) | توسالغان — مودېل چۈشۈرۈش ئۇلانمىلىرى بۇزۇلغان |
+| [Clipto](https://www.clipto.com/) | تىجارەت SaaS | — | — | — | ئۇيغۇرچىنى قوللايمەن دەيدۇ، ئەمما ئەمەلىيەتتە قوللىمايدۇ |
 | [Gheyret ASR](https://github.com/gheyret/uyghur-asr-transformer) | ئوچۇق كودلۇق transformer | لاتىن (ULY) | [providers/gheyret-asr/](providers/gheyret-asr/) (تارماق مودۇل) | [results/gheyret-asr/](results/gheyret-asr/) | |
 | [Konch](https://app.konch.ai/) | تىجارەت SaaS | ئەرەب | [providers/konch/](providers/konch/) | [results/konch/](results/konch/) | تور كۆرۈنمىسى |
 | [OpenL](https://openl.io/translate/speech/uyghur) | تىجارەت SaaS | ئەرەب | [providers/openl/](providers/openl/) | [results/openl/](results/openl/) | تور كۆرۈنمىسى |
