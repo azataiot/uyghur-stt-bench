@@ -51,6 +51,7 @@ uyghur-stt-bench/
 | [Konch](https://app.konch.ai/) | Commercial SaaS | Arabic | [providers/konch/](providers/konch/) | [results/konch/](results/konch/) | Web interface |
 | [Lingvanex](https://lingvanex.com/services/uyghur-speech-to-text/) | Commercial SaaS | — | — | — | Claims Uyghur support but does not actually provide it |
 | [OpenL](https://openl.io/translate/speech/uyghur) | Commercial SaaS | Arabic | [providers/openl/](providers/openl/) | [results/openl/](results/openl/) | Web interface |
+| [OpenAI Whisper](https://github.com/openai/whisper) | Open-source | — | — | — | Supports 99 languages but Uyghur is not among them |
 | [Picute](https://picute.net/) | Commercial SaaS | — | — | — | Claims Uyghur support but does not actually provide it |
 | [Qwen3-ASR](https://huggingface.co/Qwen/Qwen3-ASR-1.7B) | Open-source LLM | — | [providers/qwen3-asr/](providers/qwen3-asr/) | [results/qwen3-asr/](results/qwen3-asr/) | Planned — no official Uyghur support, requires NVIDIA GPU, [reportedly works](https://blog.csdn.net/weixin_42599908/article/details/158059889) |
 | [Sonix](https://sonix.ai/) | Commercial SaaS | Arabic | [providers/sonix/](providers/sonix/) | [results/sonix/](results/sonix/) | |
