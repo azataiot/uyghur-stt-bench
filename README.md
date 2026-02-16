@@ -15,12 +15,14 @@ uyghur-stt-bench/
 ├── README.md
 ├── samples/                       # Shared test audio files
 ├── providers/
+│   ├── bilingual-asr/             # BilingualASR notes
 │   ├── gheyret-asr/               # Gheyret ASR source (submodule)
 │   ├── qwen3-asr/                 # Qwen3-ASR notes
 │   ├── sonix/                     # Sonix notes
 │   ├── speechmatics/              # Speechmatics source (submodule)
 │   └── speechyou/                 # SpeechYou notes
 ├── results/
+│   ├── bilingual-asr/             # BilingualASR results
 │   ├── gheyret-asr/               # Gheyret ASR results
 │   ├── qwen3-asr/                 # Qwen3-ASR results
 │   ├── sonix/                     # Sonix results
@@ -33,6 +35,7 @@ uyghur-stt-bench/
 
 | Product | Type | Output Script | Source | Results | Notes |
 |---------|------|---------------|--------|---------|-------|
+| [BilingualASR](https://github.com/GSQZ/BilingualASR) | Open-source (Uyghur+Chinese) | — | [providers/bilingual-asr/](providers/bilingual-asr/) | [results/bilingual-asr/](results/bilingual-asr/) | Blocked — pretrained model download links are broken |
 | [Gheyret ASR](https://github.com/gheyret/uyghur-asr-transformer) | Open-source transformer | Latin (ULY) | [providers/gheyret-asr/](providers/gheyret-asr/) (submodule) | [results/gheyret-asr/](results/gheyret-asr/) | |
 | [Qwen3-ASR](https://huggingface.co/Qwen/Qwen3-ASR-1.7B) | Open-source LLM | — | [providers/qwen3-asr/](providers/qwen3-asr/) | [results/qwen3-asr/](results/qwen3-asr/) | Planned — no official Uyghur support, requires NVIDIA GPU, [reportedly works](https://blog.csdn.net/weixin_42599908/article/details/158059889) |
 | [Sonix](https://sonix.ai/) | Commercial SaaS | Arabic | [providers/sonix/](providers/sonix/) | [results/sonix/](results/sonix/) | |

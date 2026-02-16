@@ -17,12 +17,14 @@ uyghur-stt-bench/
 ├── README.md
 ├── samples/                       # ئورتاق سىناق ئاۋاز ھۆججەتلىرى
 ├── providers/
+│   ├── bilingual-asr/             # BilingualASR خاتىرىلىرى
 │   ├── gheyret-asr/               # Gheyret ASR ئەسلى كودى (تارماق مودۇل)
 │   ├── qwen3-asr/                 # Qwen3-ASR خاتىرىلىرى
 │   ├── sonix/                     # Sonix خاتىرىلىرى
 │   ├── speechmatics/              # Speechmatics ئەسلى كودى (تارماق مودۇل)
 │   └── speechyou/                 # SpeechYou خاتىرىلىرى
 ├── results/
+│   ├── bilingual-asr/             # BilingualASR نەتىجىلىرى
 │   ├── gheyret-asr/               # Gheyret ASR نەتىجىلىرى
 │   ├── qwen3-asr/                 # Qwen3-ASR نەتىجىلىرى
 │   ├── sonix/                     # Sonix نەتىجىلىرى
@@ -35,6 +37,7 @@ uyghur-stt-bench/
 
 | مەھسۇلات | تىپى | يېزىق | ئەسلى كود | نەتىجىلەر | ئىزاھات |
 |-----------|------|-------|------------|------------|---------|
+| [BilingualASR](https://github.com/GSQZ/BilingualASR) | ئوچۇق كودلۇق (ئۇيغۇرچە+خەنزۇچە) | — | [providers/bilingual-asr/](providers/bilingual-asr/) | [results/bilingual-asr/](results/bilingual-asr/) | توسالغان — مودېل چۈشۈرۈش ئۇلانمىلىرى بۇزۇلغان |
 | [Gheyret ASR](https://github.com/gheyret/uyghur-asr-transformer) | ئوچۇق كودلۇق transformer | لاتىن (ULY) | [providers/gheyret-asr/](providers/gheyret-asr/) (تارماق مودۇل) | [results/gheyret-asr/](results/gheyret-asr/) | |
 | [Qwen3-ASR](https://huggingface.co/Qwen/Qwen3-ASR-1.7B) | ئوچۇق كودلۇق LLM | — | [providers/qwen3-asr/](providers/qwen3-asr/) | [results/qwen3-asr/](results/qwen3-asr/) | پىلانلانغان — رەسمىي ئۇيغۇرچە قوللىمايدۇ، NVIDIA GPU كېرەك، [ئىشلەيدىغانلىقى خەۋەر قىلىندى](https://blog.csdn.net/weixin_42599908/article/details/158059889) |
 | [Sonix](https://sonix.ai/) | تىجارەت SaaS | ئەرەب | [providers/sonix/](providers/sonix/) | [results/sonix/](results/sonix/) | |
