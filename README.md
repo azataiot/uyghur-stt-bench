@@ -39,6 +39,7 @@ uyghur-stt-bench/
 
 | Product | Type | Output Script | Source | Results | Notes |
 |---------|------|---------------|--------|---------|-------|
+| [Azure Speech](https://azure.microsoft.com/en-us/services/cognitive-services/speech-to-text/) | Commercial API | — | — | — | Supports 100+ locales but Uyghur is not among them |
 | [BilingualASR](https://github.com/GSQZ/BilingualASR) | Open-source (Uyghur+Chinese) | — | [providers/bilingual-asr/](providers/bilingual-asr/) | [results/bilingual-asr/](results/bilingual-asr/) | Blocked — pretrained model download links are broken |
 | [CapCut](https://www.capcut.com/tools/speech-to-text-converter) | Commercial SaaS | — | — | — | Claims 130+ languages for STT, Uyghur support unconfirmed — to be tested |
 | [Clipto](https://www.clipto.com/) | Commercial SaaS | — | — | — | Claims Uyghur support but does not actually provide it |

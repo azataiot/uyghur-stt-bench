@@ -41,6 +41,7 @@ uyghur-stt-bench/
 
 | مەھسۇلات | تىپى | يېزىق | ئەسلى كود | نەتىجىلەر | ئىزاھات |
 |-----------|------|-------|------------|------------|---------|
+| [Azure Speech](https://azure.microsoft.com/en-us/services/cognitive-services/speech-to-text/) | تىجارەت API | — | — | — | 100+ تىلنى قوللايدۇ، ئەمما ئۇيغۇرچە ئىچىدە يوق |
 | [BilingualASR](https://github.com/GSQZ/BilingualASR) | ئوچۇق كودلۇق (ئۇيغۇرچە+خەنزۇچە) | — | [providers/bilingual-asr/](providers/bilingual-asr/) | [results/bilingual-asr/](results/bilingual-asr/) | توسالغان — مودېل چۈشۈرۈش ئۇلانمىلىرى بۇزۇلغان |
 | [CapCut](https://www.capcut.com/tools/speech-to-text-converter) | تىجارەت SaaS | — | — | — | 130+ تىلنى قوللايمەن دەيدۇ، ئۇيغۇرچە قوللىشى تەستىقلانمىغان — سىنالىدۇ |
 | [Clipto](https://www.clipto.com/) | تىجارەت SaaS | — | — | — | ئۇيغۇرچىنى قوللايمەن دەيدۇ، ئەمما ئەمەلىيەتتە قوللىمايدۇ |
