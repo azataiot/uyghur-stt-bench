@@ -30,8 +30,6 @@ uyghur-transcript-bench/
 
 ## Test Samples
 
-| Sample | Difficulty | Duration | Description |
-|--------|------------|----------|-------------|
 All samples are in the [`samples/`](samples/) folder.
 
 | Sample | Difficulty | Duration | Description |
@@ -40,3 +38,11 @@ All samples are in the [`samples/`](samples/) folder.
 | `dastan-01.mp3` | Medium | 2:26 | Good audio quality, realistic scenario, low background music |
 | `dutar-01.mp3` | Hard | 2:44 | Background music, child crying, noisy environment |
 | `speedy-01.mp3` | Medium | 0:36 | Faster-than-normal speech tempo |
+
+## Disclaimer
+
+The audio samples in this repository were collected from the internet and are intended for **research and educational purposes only**. If you are the copyright holder of any sample and wish to have it removed, please open an issue.
+
+## License
+
+This work is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
