@@ -1,0 +1,14 @@
+# Meta MMS Uyghur ASR transcription project configuration.
+# Azat (@azataiot) 2026-02-16
+
+[project]
+name = "meta-mms-uyghur"
+version = "0.1.0"
+description = "Transcribe Uyghur audio samples using Meta MMS (mms-1b-all)"
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=1.13",
+    "torchaudio>=0.13",
+    "transformers>=4.33",
+    "accelerate",
+]
