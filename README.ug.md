@@ -52,6 +52,7 @@ uyghur-stt-bench/
 | [Sonix](https://sonix.ai/) | تىجارەت SaaS | ئەرەب | [providers/sonix/](providers/sonix/) | [results/sonix/](results/sonix/) | |
 | [Transkriptor](https://transkriptor.com/) | تىجارەت SaaS | — | — | — | ئۇيغۇرچىنى قوللايمەن دەيدۇ، ئەمما ئەمەلىيەتتە قوللىمايدۇ |
 | [TransPerfect](https://www.transperfect.com/) | تىجارەت SaaS | — | — | — | ئالدىنقى ئۇيغۇرچە STT تەمىنلىگۈچى دەپ تىزىملانغان، ئەمما قوللايدىغان تىللارىدا ئۇيغۇرچە يوق |
+| [Transword](https://transword.ai/) | تىجارەت SaaS | — | — | — | تور ئەپتا ئۇيغۇرچە تاللانىدۇ، ئەمما ئۇيغۇرچە ئەمەس ئازەربەيجانچىغا ئايلاندۇرىدۇ |
 | [TurboScribe](https://turboscribe.ai/) | تىجارەت SaaS | — | — | — | ئۇيغۇرچىنى قوللايمەن دەيدۇ، ئەمما ئۇيغۇرچە ئەمەس تۈركچىگە ئايلاندۇرىدۇ |
 | [Speechmatics](https://www.speechmatics.com/) | تىجارەت API | ئەرەب | [providers/speechmatics/](providers/speechmatics/) (تارماق مودۇل) | [results/speechmatics/](results/speechmatics/) | |
 | [SpeechYou](https://app.speechyou.com/) | تىجارەت SaaS | ئەرەب | [providers/speechyou/](providers/speechyou/) | [results/speechyou/](results/speechyou/) | تور كۆرۈنمىسى |

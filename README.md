@@ -50,6 +50,7 @@ uyghur-stt-bench/
 | [Sonix](https://sonix.ai/) | Commercial SaaS | Arabic | [providers/sonix/](providers/sonix/) | [results/sonix/](results/sonix/) | |
 | [Transkriptor](https://transkriptor.com/) | Commercial SaaS | — | — | — | Claims Uyghur support but does not actually provide it |
 | [TransPerfect](https://www.transperfect.com/) | Commercial SaaS | — | — | — | Listed as top Uyghur STT provider but supported languages do not include Uyghur |
+| [Transword](https://transword.ai/) | Commercial SaaS | — | — | — | Uyghur is selectable in the web app but transcribes to Azerbaijani instead |
 | [TurboScribe](https://turboscribe.ai/) | Commercial SaaS | — | — | — | Claims Uyghur support but transcribes to Turkish instead |
 | [Speechmatics](https://www.speechmatics.com/) | Commercial API | Arabic | [providers/speechmatics/](providers/speechmatics/) (submodule) | [results/speechmatics/](results/speechmatics/) | |
 | [SpeechYou](https://app.speechyou.com/) | Commercial SaaS | Arabic | [providers/speechyou/](providers/speechyou/) | [results/speechyou/](results/speechyou/) | Web interface |
