@@ -45,6 +45,7 @@ uyghur-stt-bench/
 | [CapCut](https://www.capcut.com/tools/speech-to-text-converter) | Commercial SaaS | — | — | — | Claims 130+ languages for STT, Uyghur support unconfirmed — to be tested |
 | [Clipto](https://www.clipto.com/) | Commercial SaaS | — | — | — | Claims Uyghur support but does not actually provide it |
 | [Cockatoo](https://www.cockatoo.com/) | Commercial SaaS | — | — | — | Claims Uyghur support but does not actually provide it |
+| [Deepgram](https://deepgram.com/) | Commercial API | — | — | — | Supports 45+ languages but Uyghur is not among them |
 | [ElevenLabs](https://elevenlabs.io/) | Commercial SaaS | — | [providers/elevenlabs/](providers/elevenlabs/) | [results/elevenlabs/](results/elevenlabs/) | Transcribes to Uzbek, Turkish, or Kyrgyz instead of Uyghur |
 | [GhostCut](https://jollytoday.com/) | Commercial SaaS | — | — | — | Planned — claims Uyghur video translation support |
 | [Google Cloud STT](https://cloud.google.com/speech-to-text) | Commercial API | — | — | — | Supports 125+ languages but Uyghur is not among them |

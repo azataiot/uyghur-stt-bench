@@ -47,6 +47,7 @@ uyghur-stt-bench/
 | [CapCut](https://www.capcut.com/tools/speech-to-text-converter) | تىجارەت SaaS | — | — | — | 130+ تىلنى قوللايمەن دەيدۇ، ئۇيغۇرچە قوللىشى تەستىقلانمىغان — سىنالىدۇ |
 | [Clipto](https://www.clipto.com/) | تىجارەت SaaS | — | — | — | ئۇيغۇرچىنى قوللايمەن دەيدۇ، ئەمما ئەمەلىيەتتە قوللىمايدۇ |
 | [Cockatoo](https://www.cockatoo.com/) | تىجارەت SaaS | — | — | — | ئۇيغۇرچىنى قوللايمەن دەيدۇ، ئەمما ئەمەلىيەتتە قوللىمايدۇ |
+| [Deepgram](https://deepgram.com/) | تىجارەت API | — | — | — | 45+ تىلنى قوللايدۇ، ئەمما ئۇيغۇرچە ئىچىدە يوق |
 | [ElevenLabs](https://elevenlabs.io/) | تىجارەت SaaS | — | [providers/elevenlabs/](providers/elevenlabs/) | [results/elevenlabs/](results/elevenlabs/) | ئۇيغۇرچە ئەمەس ئۆزبېكچە، تۈركچە ياكى قىرغىزچىغا ئايلاندۇرىدۇ |
 | [GhostCut](https://jollytoday.com/) | تىجارەت SaaS | — | — | — | پىلانلانغان — ئۇيغۇرچە ۋىدېئو تەرجىمە قوللىشىنى ئېلان قىلىدۇ |
 | [Google Cloud STT](https://cloud.google.com/speech-to-text) | تىجارەت API | — | — | — | 125+ تىلنى قوللايدۇ، ئەمما ئۇيغۇرچە ئىچىدە يوق |
